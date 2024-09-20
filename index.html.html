@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <style>
+
+        body{
+            background-color: rgb(216, 212, 207);
+        }
+
+        *{
+           padding: 0px;
+           margin: 0px;
+           
+        }
+        .card{
+            display: inline-block;
+            margin: 20px;
+            width: 186px;
+            height: 249px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+            border-radius: 5px;
+            background-color: rgba(2, 107, 173, 0.126);
+            
+        }
+
+        .card:hover {
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+           
+          }
+
+          .card-fix{
+            margin: 28px;
+            margin-left: 51px;
+          }
+
+         /* .allcard{            
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;           
+            height: 278px;
+            width: 100%;;
+          }*/
+
+      img{
+        border-radius: 13px;
+        height: 129px;
+        width: 186px;
+        
+        
+      }
+
+      button{
+            margin: 2px;
+            margin-top: 16px;
+            background-color: blue;
+            color: white;       
+            cursor: pointer;
+            margin-left: 3px;
+
+    }
+    p{
+        font-weight: 900;
+        font-family: emoji;
+    }
+    
+
+    .text{
+        text-align: center;
+        background-color: aliceblue;
+        padding: 35px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .foot{
+        font-style: italic;
+    }
+
+    .para{
+        margin: 10px;
+        text-align: justify;
+    }
+
+    nav{
+        background-color: rgb(2, 2, 2);
+        padding: 3px ;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    nav a{
+        
+        text-decoration: none;
+        color: white;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2 class="text head">E-Commerce</h2>
+    </header>
+
+   
+
+    <main > 
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        Search for the item: <input style="margin:10px" type="text" value="Drone"  id="product">
+
+        <h2 id="demo"></h2>
+
+        <div class="allcard">
+        <div class="card-fix ">
+        <div class="card">
+            <div class="img"><a href="https://www.flipkart.com/fourbrother-e88-black-drone/p/itm89d3d704174bb?pid=DNEGVFJMH6DA6JYE&lid=LSTDNEGVFJMH6DA6JYEPSYGZB&marketplace=FLIPKART&store=jek%2Fp31%2Fjnp&srno=b_1_4&otracker=browse&fm=organic&iid=5c1996f1-9f2a-4dab-9f9b-ff1a5f315e20.DNEGVFJMH6DA6JYE.SEARCH&ppt=None&ppn=None&ssid=zqfuwb5ejk0000001726763103923" target="_blank"><img src="/HTML\Images\drone.webp"></a>
+                
+                <p style="text-align:center" id="drone" value="Drone">Drone</p>
+                <button  onclick="addToStorage()">Add To Storage</button>
+                <button onclick="getStorage()">Get Storage</button>
+            </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <a href="https://www.flipkart.com/boult-w40-quad-mic-enc-48h-battery-life-low-latency-gaming-made-india-5-3v-bluetooth-gaming/p/itm1a8ec38afaf97?pid=ACCGXYXKXWPZMGMR&lid=LSTACCGXYXKXWPZMGMRGRKQTR&marketplace=FLIPKART&store=0pm%2Ffcn&srno=b_1_5&otracker=browse&fm=organic&iid=c976e437-133b-420a-9326-73ff6ff013d7.ACCGXYXKXWPZMGMR.SEARCH&ppt=browse&ppn=browse&ssid=yf147aa5og0000001726761819653" target="_blank"><img src="/HTML\Images\Buds.webp" alt=""></a>
+                
+                <p style="text-align:center">Buds</p>
+                <button onclick="addToStorage()">Add To Storage</button>
+                <button onclick="getStorage()">Get Storage</button>
+            </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <a href="https://www.flipkart.com/canon-eos-1500d-dslr-camera-body-18-55-mm-ii-lens/p/itm033175ceb4ddd?pid=DLLFAEWE22ZAERXG&lid=LSTDLLFAEWE22ZAERXGWRV3XA&marketplace=FLIPKART&store=jek%2Fp31%2Ftrv&srno=b_1_3&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L2_view-all&fm=organic&iid=12f5145d-2e72-4c7c-9cac-d8ad7f70c162.DLLFAEWE22ZAERXG.SEARCH&ppt=hp&ppn=homepage&ssid=pxghem5t0g0000001726761686920" target="_blank"><img src="/HTML\Images\camera.webp" alt=""></a>
+                
+                <p style="text-align:center">Camera</p>
+                <button onclick="addToStorage()">Add To Storage</button>
+                <button onclick="getStorage()">Get Storage</button>
+            </div>            
+        </div>
+        <div class="card">
+            <div class="img">
+                <a href="https://www.flipkart.com/xaipro-plus-20t-max-300-kids-cycle-ideal-7-10-years-red-colour-85-assembled-20-t-mountain/p/itma2219480fba1c?pid=CCEH32JYHHMTCHPY&lid=LSTCCEH32JYHHMTCHPYUUWR6D&marketplace=FLIPKART&q=cyc&store=abc%2Fulv%2Fixt&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_qPbjo8l21cyVGKCvuA7Kf7-Lot1h0FvXV1NyM4riu2M361ym-8G841ij-bo6XFzDpqpyGwWwnFfzIa-VettRvw%3D%3D&ppt=sp&ppn=sp&ssid=910q3b6ips0000001726761948386&qH=fcb03e26c61229f7" target="_blank"><img src="/HTML\Images\cycle.webp" alt=""></a>
+                <p style="text-align:center">Bicycle</p>
+                <button onclick="addToStorage()">Add To Storage</button>
+                <button onclick="getStorage()">Get Storage</button>
+            </div>            
+        </div>
+        <div class="card">
+            <div class="img"><a href="https://www.flipkart.com/abros-boys-girls-velcro-running-shoes/p/itmde485d8b5f731?pid=KSSGZJDGTXHSYM83&lid=LSTKSSGZJDGTXHSYM835DHAER&marketplace=FLIPKART&store=osp%2Fmba%2Ferx%2F9oc&srno=b_1_17&otracker=nmenu_sub_Baby%20%26%20Kids_0_Sport%20Shoe&fm=organic&iid=en_gCRjJY5jIGmR1A3ryBE5DCDmCcAb_TCfM5IKHjxFPc4D-_K9hiZEQ8LXqT-qIGewzKgm81qUZQ2szKgCVNYhLg%3D%3D&ppt=browse&ppn=browse&ssid=gvnx7yi4o00000001726755023677 " target="_blank"><img src="/HTML\Images\shoe.webp" alt=""></a>
+                
+                <p style="text-align:center">Shoes</p>
+                <button onclick="addToStorage()">Add To Storage</button>
+                <button onclick="getStorage()"> Get Storage</button>
+            </div>            
+        </div>
+    </div>
+
+   
+
+    </main>
+    <div class="photo-img">
+        <div>
+            <img style="margin: 20px;" src="/HTML\Images\brian-wangenheim-6UL16bdNxxw-unsplash.jpg" alt="" >
+            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, in?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed porro totam voluptas facilis. Reprehenderit numquam vero quaerat voluptatum similique, enim nemo fugit autem obcaecati ipsa molestias id ratione neque sit vel eius impedit! Minima dolorum ad laboriosam facilis excepturi?</p>
+        </div>
+        <div>
+            <img  style="margin: 20px;" src="/HTML\Images\janis-dzenis-Y84gsTB52Cc-unsplash.jpg" alt="" >
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit dolorum ad necessitatibus. Molestias laborum natus sunt debitis alias error ea eos vero perspiciatis laudantium ad itaque, delectus incidunt rem soluta aliquid ipsum! Error ratione nisi natus id quos sed doloremque beatae voluptatibus ut vero quo, enim dolor fugit necessitatibus recusandae!</p>
+        </div>
+        <div>
+            <img  style="margin: 20px;" src="/HTML\Images\vitaliy-shevchenko-CxPnMT-n2GU-unsplash.jpg" alt="" >
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio ad, expedita vitae pariatur eligendi necessitatibus, quasi earum laboriosam autem sequi asperiores quod molestiae officiis dolore alias commodi assumenda sint ipsa velit mollitia? Saepe placeat asperiores dicta assumenda veniam nemo quod minus maxime ullam? Eum, voluptatum. Commodi, veniam. Sint, earum.</p>
+        </div>
+        
+    </div>
+
+    <footer>
+        <h2 class="text foot">Copyright@ 2024</h2>
+    </footer>
+
+
+    <script>
+        function addToStorage(){
+            let a  = document.getElementById("product").value
+            localStorage.setItem("ProductName", a)
+            console.log(a)
+        }
+
+        function getStorage(){
+            let item = localStorage.getItem("ProductName")
+            console.log(item);
+            document.getElementById("demo").innerHTML = item
+            //console.log("pressed"); 
+        }
+    </script>
+</body>
+</html>
